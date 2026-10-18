@@ -200,7 +200,6 @@ Also note that the speed settings on the Talko and BPM of the sequence often int
 
 Planned improvements include:
 
-- **Calibration:** verify the target voltages on hardware and measure Talko Sound CV switching points.
 - **Instrument UI:** build a user interface for both instruments so they are easier to use in Ableton Live.
 - **General CV control:** generalize beyond the Talko 2 with more flexible signalling and settings.
 - **Add usage video and screenshots:** add some useful usage tips and examples.
