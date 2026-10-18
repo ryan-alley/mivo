@@ -28,7 +28,36 @@ Both instruments are self-contained Max for Live devices in [devices/](devices/)
 
 ## Setup
 
-More setup information coming soon.
+The steps below describe the one layout tested so far: one MIDI track per instrument, controlling a Polaxis Talko 2. Other layouts are untested.
+
+### 1. Enable the Push CV outputs
+
+1. In Live's audio preferences, enable the two stereo outputs for the Push - label them as:
+   - Push CV Output 1 - Tip
+   - Push CV Output 1 - Ring
+   - Push CV Output 2 - Tip
+   - Push CV Output 2 - Ring
+2. On the Push, select CV output.
+3. The outputs then appear in Live by there aforementioned names, paired as stereo.
+
+### 2. Add two MIDI tracks
+
+1. Create two MIDI tracks.
+2. Load `talko_midi_gate_and_pitch.amxd` on the first track and `talko_midi_pitch_and_velocity.amxd` on the second.
+3. Set each track's audio output to its Push CV output pair:
+   - Gate and pitch track: Push CV Output 1 (left channel = Tip, right channel = Ring)
+   - Pitch and velocity track: Push CV Output 2 (left channel = Tip, right channel = Ring)
+4. Keep the gain fully up, the fader at 0 dB, and no effects on either track.
+
+### 3. Understand how the two tracks work together
+
+The two devices split the work. The gate and pitch track sends the gate signal, along with pitch on the right channel. The pitch and velocity track provides two more CV values. Nothing needs to match exactly between the tracks, but both must receive MIDI notes for their CV outputs to update.
+
+### 4. Check voltages before connecting
+
+Measure each output with a multimeter before connecting the Talko 2. The devices' calibration has not yet been verified against the Talko 2, and the gate-high voltage of 5 V is assumed.
+
+Note: the pitch CV is designed to read 0 V at C3 and 3.3 V at C7. See the Future section for planned documentation of the note-to-voltage mapping.
 
 ## Future
 
