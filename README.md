@@ -26,6 +26,16 @@ Both instruments are self-contained Max for Live devices in [devices/](devices/)
 | `talko_midi_gate_and_pitch.amxd` | Ext. Out 5/6 | Gate (left), pitch (right) |
 | `talko_midi_pitch_and_velocity.amxd` | Ext. Out 7/8 | Pitch (left), velocity (right) |
 
+The updated pitch bend versions of both devices are in [src/](src/) as `.maxpat` files. They are not yet re-saved as `.amxd`.
+
+## Pitch bend
+
+Each device has a **Pitch Bend** dial that can be automated in Live. The dial is added to incoming MIDI pitch bend, and the total is clipped to ±1.
+
+- The clipped value maps to ±0.55 V. This is one octave of total travel, from the lowest to the highest bend, and it equals ±6 semitones at 0.0917 V per semitone.
+- Bend is added to the pitch CV before output scaling, so it moves the pitch whether or not a note is held.
+- Before any note is played, pitch CV is measured from 0 V (C3).
+
 ## Setup
 
 The steps below describe the one layout tested so far: one MIDI track per instrument, controlling a Polaxis Talko 2. Other layouts are untested.
@@ -63,7 +73,7 @@ Note: the pitch CV is designed to read 0 V at C3 and 3.3 V at C7. See the Future
 
 Planned improvements include:
 
-- **Pitch bend automation:** make pitch bend automatable so it affects the CV for MIDI pitch in both instruments.
+- **Pitch bend automation:** implemented in the [src/](src/) patches. It needs testing in Max and re-saving as `.amxd` before it is used.
 - **Velocity automation:** make velocity automatable in a similar way, so it affects the velocity CV.
 - **Talko 2 voltages:** document the Talko 2's gate and CV voltage specifications.
 - **Push 3 outputs:** document the Push 3's CV output capabilities and the assumptions the instruments make.
