@@ -57,7 +57,7 @@
 						880.0,
 						18.0
 					],
-					"text": "Based on uploaded mapper. 0-3.3 V via Max signal = (volts - 5) / 10."
+					"text": "Max signal = target volts / 20. Track gain at +6 dB doubles it; Push pedal jacks output 0-10 V, so the output matches the target volts."
 				}
 			},
 			{
