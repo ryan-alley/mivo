@@ -15,7 +15,7 @@ Together, the instruments provide the gate and CV signals needed for this contro
 
 ## Important: instrument gain
 
-Turn the track volume fader on each instrument track **fully up**. The fader must be at maximum to produce the appropriate voltage.
+Keep the track volume fader at **0 dB** (unity) on each instrument track. The devices' voltage scaling assumes 0 dB. Raising the fader above 0 dB raises the output above the intended voltage, and it may clip at the Push's 10 V limit (not tested).
 
 ## Devices
 
@@ -100,7 +100,7 @@ The steps below describe the one layout tested so far: one MIDI track per instru
 3. Set each track's audio output to its Push CV output pair:
    - Gate and pitch track: Push CV Output 1 (left channel = Tip, right channel = Ring)
    - Pitch and velocity track: Push CV Output 2 (left channel = Tip, right channel = Ring)
-4. Keep the track volume fader fully up and no effects on either track.
+4. Keep the track volume fader at 0 dB and no effects on either track.
 
 ### 3. Understand how the two tracks work together
 
