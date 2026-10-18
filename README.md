@@ -32,7 +32,13 @@ More setup information coming soon.
 
 ## Future
 
-Future improvements include:
+Planned improvements include:
 
-- UI elements
-- Generalized CV control
+- **Pitch bend automation:** make pitch bend automatable so it affects the CV for MIDI pitch in both instruments.
+- **Velocity automation:** make velocity automatable in a similar way, so it affects the velocity CV.
+- **Talko 2 voltages:** document the Talko 2's gate and CV voltage specifications.
+- **Push 3 outputs:** document the Push 3's CV output capabilities and the assumptions the instruments make.
+- **Note-to-voltage mapping:** document how MIDI notes map to voltage under each setting. The current mapping is C3 to C7, linear from 0 V to 3.3 V.
+- **TRS breakout setup:** add examples and diagrams for splitting tip and ring with a TRS-to-two-TS breakout cable.
+- **Instrument UI:** build a user interface for both instruments so they are easier to use in Ableton Live.
+- **General CV control:** generalize beyond the Talko 2 with more flexible signalling.
