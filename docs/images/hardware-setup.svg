@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title desc">
+  <title id="title">Push 3 to Talko 2: two TRS outputs become four TS control signals</title>
+  <desc id="desc">Each Push Pedal/CV output connects to a quarter-inch TRS male to dual quarter-inch TS female breakout. Four quarter-inch TS male to eighth-inch TS male cables continue to the Talko 2. CV 1 tip, Live output 5, carries gate to Gate In; CV 1 ring, output 6, carries note CV to Pitch. CV 2 tip, output 7, carries note CV to Sound; CV 2 ring, output 8, carries velocity CV to Speed. This is an example assignment, not a physical panel layout. Target voltages require meter verification.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #172b42; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 21px; font-weight: 700; }
+      .label { font-size: 18px; }
+      .small { font-size: 16px; }
+      .muted { fill: #4e6278; }
+      .wire { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .gate { stroke: #ba5215; }
+      .pitch { stroke: #176eb5; }
+      .sound { stroke: #8242b4; }
+      .speed { stroke: #18806c; }
+    </style>
+    <g id="trs-plug">
+      <rect x="0" y="-7" width="39" height="14" rx="3" fill="#c9d3dc" stroke="#172b42" stroke-width="2"/>
+      <path d="M12 -7V7 M25 -7V7" stroke="#172b42" stroke-width="3"/>
+      <rect x="39" y="-12" width="42" height="24" rx="5" fill="#304357"/>
+    </g>
+    <g id="ts-socket">
+      <rect x="0" y="-12" width="42" height="24" rx="5" fill="#304357"/>
+      <rect x="39" y="-10" width="12" height="20" rx="2" fill="#c9d3dc" stroke="#172b42" stroke-width="2"/>
+    </g>
+    <g id="ts-plug">
+      <rect x="0" y="-7" width="34" height="14" rx="3" fill="#c9d3dc" stroke="#172b42" stroke-width="2"/>
+      <path d="M12 -7V7" stroke="#172b42" stroke-width="3"/>
+      <rect x="34" y="-12" width="40" height="24" rx="5" fill="#304357"/>
+    </g>
+    <g id="mini-ts-plug">
+      <rect x="0" y="-9" width="33" height="18" rx="4" fill="#304357"/>
+      <rect x="33" y="-5" width="29" height="10" rx="2" fill="#c9d3dc" stroke="#172b42" stroke-width="2"/>
+      <path d="M49 -5V5" stroke="#172b42" stroke-width="2"/>
+    </g>
+    <g id="jack">
+      <circle r="17" fill="#dbe5ee" stroke="#172b42" stroke-width="2"/>
+      <circle r="10" fill="#172b42"/>
+    </g>
+  </defs>
+  <rect width="1280" height="860" rx="16" fill="#ffffff"/>
+  <text x="40" y="52" class="title">Two Push CV jacks. Four independent Talko controls.</text>
+  <text x="40" y="83" class="label muted">Example routing | 1/4&quot; = 6.35 mm | 1/8&quot; = 3.5 mm | Connector sizes are schematic.</text>
+
+  <g class="heading">
+    <text x="40" y="135">1. Push 3</text>
+    <text x="302" y="135">2. TRS breakouts</text>
+    <text x="650" y="135">3. TS adapter cables</text>
+    <text x="1060" y="135">4. Talko 2</text>
+  </g>
+  <rect x="40" y="164" width="222" height="521" rx="16" fill="#edf2f7" stroke="#c2cfdd"/>
+  <rect x="1060" y="164" width="180" height="521" rx="16" fill="#edf2f7" stroke="#c2cfdd"/>
+  <text x="62" y="202" class="small muted">Pedal jacks in CV mode</text>
+  <text x="62" y="280" class="heading">Pedal/CV 1</text>
+  <text x="62" y="310" class="label">Live Out 5/6</text>
+  <text x="62" y="340" class="small muted">1/4&quot; TRS</text>
+  <text x="62" y="515" class="heading">Pedal/CV 2</text>
+  <text x="62" y="545" class="label">Live Out 7/8</text>
+  <text x="62" y="575" class="small muted">1/4&quot; TRS</text>
+  <text x="62" y="656" class="small muted">Logical, not panel order</text>
+
+  <text x="476" y="186" class="small muted">1/4&quot; TS</text>
+  <text x="476" y="208" class="small muted">female</text>
+  <text x="573" y="186" class="small muted">1/4&quot; TS</text>
+  <text x="573" y="208" class="small muted">male</text>
+  <text x="970" y="186" class="small muted">1/8&quot; TS</text>
+  <text x="970" y="208" class="small muted">male</text>
+  <text x="1084" y="202" class="small muted">3.5 mm inputs</text>
+
+  <use href="#jack" x="254" y="325"/>
+  <use href="#trs-plug" x="264" y="325"/>
+  <path d="M345 325H393" class="wire" stroke="#304357"/>
+  <path d="M393 325L438 265H488" class="wire gate"/>
+  <path d="M393 325L438 385H488" class="wire pitch"/>
+  <circle cx="393" cy="325" r="9" fill="#304357"/>
+  <text x="302" y="369" class="small muted">TRS male</text>
+
+  <use href="#jack" x="254" y="560"/>
+  <use href="#trs-plug" x="264" y="560"/>
+  <path d="M345 560H393" class="wire" stroke="#304357"/>
+  <path d="M393 560L438 500H488" class="wire sound"/>
+  <path d="M393 560L438 620H488" class="wire speed"/>
+  <circle cx="393" cy="560" r="9" fill="#304357"/>
+  <text x="302" y="604" class="small muted">TRS male</text>
+
+  <g class="small" font-weight="700">
+    <text x="429" y="244">TIP / L / 5</text>
+    <text x="429" y="364">RING / R / 6</text>
+    <text x="429" y="479">TIP / L / 7</text>
+    <text x="429" y="599">RING / R / 8</text>
+  </g>
+  <use href="#ts-socket" x="488" y="265"/>
+  <use href="#ts-socket" x="488" y="385"/>
+  <use href="#ts-socket" x="488" y="500"/>
+  <use href="#ts-socket" x="488" y="620"/>
+  <use href="#ts-plug" x="541" y="265"/>
+  <use href="#ts-plug" x="541" y="385"/>
+  <use href="#ts-plug" x="541" y="500"/>
+  <use href="#ts-plug" x="541" y="620"/>
+  <path d="M615 265H1000" class="wire gate"/>
+  <path d="M615 385H1000" class="wire pitch"/>
+  <path d="M615 500H1000" class="wire sound"/>
+  <path d="M615 620H1000" class="wire speed"/>
+
+  <g class="label" font-weight="700">
+    <text x="659" y="246">Gate: 0 / 5 V</text>
+    <text x="659" y="366">Note CV: 0-3.3 V</text>
+    <text x="659" y="481">Note CV: 0-3.3 V</text>
+    <text x="659" y="601">Velocity CV: 0-3.3 V</text>
+  </g>
+  <g class="small muted">
+    <text x="659" y="298">Gate + pitch track, left</text>
+    <text x="659" y="418">Gate + pitch track, right</text>
+    <text x="659" y="533">Pitch + velocity track, left</text>
+    <text x="659" y="653">Pitch + velocity track, right</text>
+  </g>
+  <use href="#jack" x="1074" y="265"/>
+  <use href="#jack" x="1074" y="385"/>
+  <use href="#jack" x="1074" y="500"/>
+  <use href="#jack" x="1074" y="620"/>
+  <use href="#mini-ts-plug" x="1000" y="265"/>
+  <use href="#mini-ts-plug" x="1000" y="385"/>
+  <use href="#mini-ts-plug" x="1000" y="500"/>
+  <use href="#mini-ts-plug" x="1000" y="620"/>
+  <g class="heading">
+    <text x="1103" y="272">Gate In</text>
+    <text x="1103" y="392">Pitch</text>
+    <text x="1103" y="507">Sound</text>
+    <text x="1103" y="627">Speed</text>
+  </g>
+  <text x="1093" y="657" class="small muted">FX left unpatched</text>
+
+  <rect x="40" y="710" width="1200" height="118" rx="12" fill="#f3f6fa"/>
+  <text x="60" y="739" class="label">Cable list: 2 x TRS male to dual TS female breakouts + 4 x 1/4&quot; TS male to 1/8&quot; TS male cables.</text>
+  <text x="60" y="766" class="label">Breakout wiring: Tip to first TS tip; Ring to second TS tip; Sleeve to both TS sleeves (common ground).</text>
+  <text x="60" y="793" class="small muted">Use an insert/stereo breakout, not a headphone duplicator. Colors here identify signals, not cable color standards.</text>
+  <text x="60" y="815" class="small muted">Voltages shown are targets, not verified measurements. Keep tracks at 0 dB; meter all outputs before connecting.</text>
+</svg>

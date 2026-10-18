@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+  <title id="title">C3 to C6: linear voltage and an approximate ten-sound bank</title>
+  <desc id="desc">A piano keyboard runs from C3, MIDI 60, at zero volts to C6, MIDI 96, at 3.3 volts. C4 is 1.1 volts; C5 is 2.2 volts. Ten equal example Sound CV bins are 0.33 volts wide. The approximate note ranges for sounds one to ten are C3 to D sharp 3, E3 to G3, G sharp 3 to A sharp 3, B3 to D4, D sharp 4 to F4, F sharp 4 to A4, A sharp 4 to C sharp 5, D5 to E5, F5 to G sharp 5, and A5 to C6. Bank zero contains spoken digits zero to nine. Thresholds are illustrative, not firmware specifications.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #172b42; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 22px; font-weight: 700; }
+      .label { font-size: 18px; }
+      .small { font-size: 16px; }
+      .muted { fill: #4e6278; }
+      .b0 { fill: #f9d2b2; }
+      .b1 { fill: #ffe6a1; }
+      .b2 { fill: #e4eaaa; }
+      .b3 { fill: #bae4c2; }
+      .b4 { fill: #b7e6dd; }
+      .b5 { fill: #bde3f5; }
+      .b6 { fill: #c5d2f6; }
+      .b7 { fill: #dbc9f1; }
+      .b8 { fill: #edc7e4; }
+      .b9 { fill: #f7c5cf; }
+      .white-key { stroke: #354a61; stroke-width: 1.5; }
+      .black-key { fill: #172b42; stroke: #ffffff; stroke-width: 1; }
+      .white-label { font-size: 16px; text-anchor: middle; }
+      .black-label { font-size: 12px; text-anchor: middle; }
+      .black-label text { fill: #ffffff; }
+      .range { font-size: 17px; font-weight: 700; text-anchor: middle; }
+    </style>
+    <rect id="white" width="52" height="210" rx="3"/>
+    <rect id="black" width="32" height="124" rx="3"/>
+  </defs>
+  <rect width="1280" height="900" rx="16" fill="#ffffff"/>
+  <text x="40" y="52" class="title">C3 to C6: three octaves across 0-3.3 V</text>
+  <text x="40" y="83" class="label muted">Ableton note names | 37 notes, 36 semitone steps | Intended voltage, not measured calibration</text>
+  <g class="heading">
+    <text x="90" y="121">C3 = 0 V</text>
+    <text x="454" y="121" text-anchor="middle">C4 = 1.1 V</text>
+    <text x="818" y="121" text-anchor="middle">C5 = 2.2 V</text>
+    <text x="1182" y="121" text-anchor="end">C6 = 3.3 V</text>
+  </g>
+  <g class="small muted">
+    <text x="90" y="146">MIDI 60</text>
+    <text x="454" y="146" text-anchor="middle">MIDI 72</text>
+    <text x="818" y="146" text-anchor="middle">MIDI 84</text>
+    <text x="1182" y="146" text-anchor="end">MIDI 96</text>
+  </g>
+
+  <g transform="translate(64 165)" class="white-key">
+    <use href="#white" x="0" class="b0"/>
+    <use href="#white" x="52" class="b0"/>
+    <use href="#white" x="104" class="b1"/>
+    <use href="#white" x="156" class="b1"/>
+    <use href="#white" x="208" class="b1"/>
+    <use href="#white" x="260" class="b2"/>
+    <use href="#white" x="312" class="b3"/>
+    <use href="#white" x="364" class="b3"/>
+    <use href="#white" x="416" class="b3"/>
+    <use href="#white" x="468" class="b4"/>
+    <use href="#white" x="520" class="b4"/>
+    <use href="#white" x="572" class="b5"/>
+    <use href="#white" x="624" class="b5"/>
+    <use href="#white" x="676" class="b6"/>
+    <use href="#white" x="728" class="b6"/>
+    <use href="#white" x="780" class="b7"/>
+    <use href="#white" x="832" class="b7"/>
+    <use href="#white" x="884" class="b8"/>
+    <use href="#white" x="936" class="b8"/>
+    <use href="#white" x="988" class="b9"/>
+    <use href="#white" x="1040" class="b9"/>
+    <use href="#white" x="1092" class="b9"/>
+  </g>
+  <g transform="translate(64 165)" class="black-key">
+    <use href="#black" x="36"/>
+    <use href="#black" x="88"/>
+    <use href="#black" x="192"/>
+    <use href="#black" x="244"/>
+    <use href="#black" x="296"/>
+    <use href="#black" x="400"/>
+    <use href="#black" x="452"/>
+    <use href="#black" x="556"/>
+    <use href="#black" x="608"/>
+    <use href="#black" x="660"/>
+    <use href="#black" x="764"/>
+    <use href="#black" x="816"/>
+    <use href="#black" x="920"/>
+    <use href="#black" x="972"/>
+    <use href="#black" x="1024"/>
+  </g>
+  <g transform="translate(64 265)">
+    <rect x="40" width="24" height="16" class="b0"/>
+    <rect x="92" width="24" height="16" class="b0"/>
+    <rect x="196" width="24" height="16" class="b1"/>
+    <rect x="248" width="24" height="16" class="b2"/>
+    <rect x="300" width="24" height="16" class="b2"/>
+    <rect x="404" width="24" height="16" class="b3"/>
+    <rect x="456" width="24" height="16" class="b4"/>
+    <rect x="560" width="24" height="16" class="b5"/>
+    <rect x="612" width="24" height="16" class="b5"/>
+    <rect x="664" width="24" height="16" class="b6"/>
+    <rect x="768" width="24" height="16" class="b6"/>
+    <rect x="820" width="24" height="16" class="b7"/>
+    <rect x="924" width="24" height="16" class="b8"/>
+    <rect x="976" width="24" height="16" class="b8"/>
+    <rect x="1028" width="24" height="16" class="b9"/>
+  </g>
+  <g class="white-label">
+    <text x="90" y="342">C3</text>
+    <text x="142" y="342">D3</text>
+    <text x="194" y="342">E3</text>
+    <text x="246" y="342">F3</text>
+    <text x="298" y="342">G3</text>
+    <text x="350" y="342">A3</text>
+    <text x="402" y="342">B3</text>
+    <text x="454" y="342">C4</text>
+    <text x="506" y="342">D4</text>
+    <text x="558" y="342">E4</text>
+    <text x="610" y="342">F4</text>
+    <text x="662" y="342">G4</text>
+    <text x="714" y="342">A4</text>
+    <text x="766" y="342">B4</text>
+    <text x="818" y="342">C5</text>
+    <text x="870" y="342">D5</text>
+    <text x="922" y="342">E5</text>
+    <text x="974" y="342">F5</text>
+    <text x="1026" y="342">G5</text>
+    <text x="1078" y="342">A5</text>
+    <text x="1130" y="342">B5</text>
+    <text x="1182" y="342">C6</text>
+  </g>
+  <g class="black-label">
+    <text x="116" y="195">C#3</text>
+    <text x="168" y="195">D#3</text>
+    <text x="272" y="195">F#3</text>
+    <text x="324" y="195">G#3</text>
+    <text x="376" y="195">A#3</text>
+    <text x="480" y="195">C#4</text>
+    <text x="532" y="195">D#4</text>
+    <text x="636" y="195">F#4</text>
+    <text x="688" y="195">G#4</text>
+    <text x="740" y="195">A#4</text>
+    <text x="844" y="195">C#5</text>
+    <text x="896" y="195">D#5</text>
+    <text x="1000" y="195">F#5</text>
+    <text x="1052" y="195">G#5</text>
+    <text x="1104" y="195">A#5</text>
+  </g>
+  <text x="640" y="407" class="small muted" text-anchor="middle">Key colors = example sound slots below. Piano-key widths are not a linear voltage ruler.</text>
+
+  <text x="40" y="450" class="heading">Ten equal Sound CV bins: 3.3 V / 10 = 0.33 V per sound</text>
+  <g transform="translate(90 475)" stroke="#ffffff" stroke-width="2">
+    <rect width="109.2" height="62" class="b0"/>
+    <rect x="109.2" width="109.2" height="62" class="b1"/>
+    <rect x="218.4" width="109.2" height="62" class="b2"/>
+    <rect x="327.6" width="109.2" height="62" class="b3"/>
+    <rect x="436.8" width="109.2" height="62" class="b4"/>
+    <rect x="546" width="109.2" height="62" class="b5"/>
+    <rect x="655.2" width="109.2" height="62" class="b6"/>
+    <rect x="764.4" width="109.2" height="62" class="b7"/>
+    <rect x="873.6" width="109.2" height="62" class="b8"/>
+    <rect x="982.8" width="109.2" height="62" class="b9"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="144.6" y="500">Sound 1</text>
+    <text x="253.8" y="500">Sound 2</text>
+    <text x="363" y="500">Sound 3</text>
+    <text x="472.2" y="500">Sound 4</text>
+    <text x="581.4" y="500">Sound 5</text>
+    <text x="690.6" y="500">Sound 6</text>
+    <text x="799.8" y="500">Sound 7</text>
+    <text x="909" y="500">Sound 8</text>
+    <text x="1018.2" y="500">Sound 9</text>
+    <text x="1127.4" y="500">Sound 10</text>
+    <text x="144.6" y="523">digit 0</text>
+    <text x="253.8" y="523">digit 1</text>
+    <text x="363" y="523">digit 2</text>
+    <text x="472.2" y="523">digit 3</text>
+    <text x="581.4" y="523">digit 4</text>
+    <text x="690.6" y="523">digit 5</text>
+    <text x="799.8" y="523">digit 6</text>
+    <text x="909" y="523">digit 7</text>
+    <text x="1018.2" y="523">digit 8</text>
+    <text x="1127.4" y="523">digit 9</text>
+  </g>
+  <path d="M90 537v10 M199.2 537v10 M308.4 537v10 M417.6 537v10 M526.8 537v10 M636 537v10 M745.2 537v10 M854.4 537v10 M963.6 537v10 M1072.8 537v10 M1182 537v10" stroke="#4e6278"/>
+  <g class="small muted" text-anchor="middle">
+    <text x="90" y="568">0.00 V</text>
+    <text x="199.2" y="568">0.33 V</text>
+    <text x="308.4" y="568">0.66 V</text>
+    <text x="417.6" y="568">0.99 V</text>
+    <text x="526.8" y="568">1.32 V</text>
+    <text x="636" y="568">1.65 V</text>
+    <text x="745.2" y="568">1.98 V</text>
+    <text x="854.4" y="568">2.31 V</text>
+    <text x="963.6" y="568">2.64 V</text>
+    <text x="1072.8" y="568">2.97 V</text>
+    <text x="1182" y="568">3.30 V</text>
+  </g>
+  <text x="40" y="610" class="label">Approximate playable ranges (inclusive):</text>
+  <g class="range">
+    <text x="144.6" y="645">C3 to</text>
+    <text x="144.6" y="668">D#3</text>
+    <text x="253.8" y="645">E3 to</text>
+    <text x="253.8" y="668">G3</text>
+    <text x="363" y="645">G#3 to</text>
+    <text x="363" y="668">A#3</text>
+    <text x="472.2" y="645">B3 to</text>
+    <text x="472.2" y="668">D4</text>
+    <text x="581.4" y="645">D#4 to</text>
+    <text x="581.4" y="668">F4</text>
+    <text x="690.6" y="645">F#4 to</text>
+    <text x="690.6" y="668">A4</text>
+    <text x="799.8" y="645">A#4 to</text>
+    <text x="799.8" y="668">C#5</text>
+    <text x="909" y="645">D5 to</text>
+    <text x="909" y="668">E5</text>
+    <text x="1018.2" y="645">F5 to</text>
+    <text x="1018.2" y="668">G#5</text>
+    <text x="1127.4" y="645">A5 to</text>
+    <text x="1127.4" y="668">C6</text>
+  </g>
+  <g class="small muted" text-anchor="middle">
+    <text x="144.6" y="698">MIDI 60-63</text>
+    <text x="253.8" y="698">MIDI 64-67</text>
+    <text x="363" y="698">MIDI 68-70</text>
+    <text x="472.2" y="698">MIDI 71-74</text>
+    <text x="581.4" y="698">MIDI 75-77</text>
+    <text x="690.6" y="698">MIDI 78-81</text>
+    <text x="799.8" y="698">MIDI 82-85</text>
+    <text x="909" y="698">MIDI 86-88</text>
+    <text x="1018.2" y="698">MIDI 89-92</text>
+    <text x="1127.4" y="698">MIDI 93-96</text>
+  </g>
+  <rect x="40" y="728" width="1200" height="143" rx="12" fill="#f3f6fa"/>
+  <text x="60" y="759" class="label">V = 3.3 x (clamp(MIDI note, 60, 96) - 60) / 36</text>
+  <text x="60" y="787" class="label">1 octave = 1.1 V | 1 semitone = 0.091667 V | 1 sound bin = 3.6 semitone steps (3 or 4 playable keys).</text>
+  <text x="60" y="814" class="small muted">Example: encoder selects bank 0 (digits 0-9); Sound CV selects a digit, not a bank. Gate In triggers speech.</text>
+  <text x="60" y="837" class="small muted">Bins include their lower boundary, exclude their upper boundary; the last includes 3.3 V. Verify actual switching points.</text>
+  <text x="60" y="860" class="small muted">Equal-bin approximation, not published Talko firmware thresholds. This is control selection, not 1 V/oct pitch tuning.</text>
+</svg>
