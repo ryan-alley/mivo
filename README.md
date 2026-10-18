@@ -105,3 +105,4 @@ Planned improvements include:
 - **TRS breakout setup:** add examples and diagrams for splitting tip and ring with a TRS-to-two-TS breakout cable.
 - **Instrument UI:** build a user interface for both instruments so they are easier to use in Ableton Live.
 - **General CV control:** generalize beyond the Talko 2 with more flexible signalling and settings.
+- **Add usage video and screenshots:** add some useful usage tips and examples.
