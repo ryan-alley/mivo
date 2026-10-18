@@ -57,7 +57,7 @@
 						880.0,
 						18.0
 					],
-					"text": "Max signal = target volts / 20. Track gain at +6 dB doubles it; Push pedal jacks output 0-10 V, so the output matches the target volts."
+					"text": "Max signal = target volts / 10. Track fader at 0 dB (unity); Push pedal jacks output 0-10 V, so the output matches the target volts."
 				}
 			},
 			{
@@ -200,7 +200,7 @@
 						67.0,
 						20.0
 					],
-					"text": "expr $f1 / 20."
+					"text": "expr $f1 / 10."
 				}
 			},
 			{
@@ -292,7 +292,7 @@
 						67.0,
 						20.0
 					],
-					"text": "expr $f1 / 20."
+					"text": "expr $f1 / 10."
 				}
 			},
 			{
