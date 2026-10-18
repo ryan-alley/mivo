@@ -80,8 +80,8 @@ Note: the pitch CV is designed to read 0 V at C3 and 3.3 V at C7. See the Future
 
 Planned improvements include:
 
-- ~~**Pitch bend automation:**~~ implemented in the [src/](src/) patches. It needs testing in Max and re-saving as `.amxd` before it is used.
-- ~~**Velocity automation:**~~ implemented in [src/talko_midi_pitch_and_velocity.maxpat](src/talko_midi_pitch_and_velocity.maxpat) as a scale dial. It needs testing in Max and re-saving as `.amxd` before use.
+- **Pitch bend automation:** tried an implementation but it was clunky and didn't work great.  There's a lot of behind-the-scenes mapping that goes on with the automation in Ableton that you have to take into account.
+- **Velocity automation:** had this vaguely coded as well, but I think it would be better to use dedicated control channels in MIDI?
 - **Talko 2 voltages:** document the Talko 2's gate and CV voltage specifications.
 - **Push 3 outputs:** document the Push 3's CV output capabilities and the assumptions the instruments make.
 - **Note-to-voltage mapping:** document how MIDI notes map to voltage under each setting. The current mapping is C3 to C7, linear from 0 V to 3.3 V.
