@@ -26,21 +26,21 @@ Both instruments are self-contained Max for Live devices in [devices/](devices/)
 | `talko_midi_gate_and_pitch.amxd` | Ext. Out 5/6 | Gate (left), pitch (right) |
 | `talko_midi_pitch_and_velocity.amxd` | Ext. Out 7/8 | Pitch (left), velocity (right) |
 
-The updated pitch bend versions of both devices are in [src/](src/) as `.maxpat` files. They are not yet re-saved as `.amxd`.
+The [src/](src/) folder holds `.maxpat` source versions of both devices, generated from the `.amxd` files.
 
-## Pitch bend
+## Pitch bend (planned)
 
-Each device has a **Pitch Bend** dial that can be automated in Live. The dial is added to incoming MIDI pitch bend, and the total is clipped to ±1.
+Pitch bend automation is not implemented in the current devices. The planned design:
 
-- The clipped value maps to ±0.55 V. This is one octave of total travel, from the lowest to the highest bend, and it equals ±6 semitones at 0.0917 V per semitone.
-- Bend is added to the pitch CV before output scaling, so it moves the pitch whether or not a note is held.
-- Before any note is played, pitch CV is measured from 0 V (C3).
+- A **Pitch Bend** dial, automatable in Live, is added to incoming MIDI pitch bend. The total is clipped to ±1.
+- The clipped value maps to ±0.55 V, one octave of total travel, or ±6 semitones at 0.0917 V per semitone.
+- Bend is added to the pitch CV before output scaling, so it would move the pitch whether or not a note is held.
 
-## Velocity scale
+## Velocity scale (planned)
 
-The pitch/velocity device has a **Velocity Scale** dial that can be automated in Live. It multiplies the held note velocity CV from 0% (0 V) to 100% (full velocity). The default is 1 (100%), so the output is unchanged until the dial is moved.
+Velocity scaling is not implemented in the current devices. The planned design:
 
-- The dial applies to the held velocity, so moving it updates the output while a note is held.
+- A **Velocity Scale** dial on the pitch/velocity device, automatable in Live, multiplies the held note velocity CV from 0% (0 V) to 100% (full velocity). The default is 100%, so the output would be unchanged until the dial is moved.
 - It is applied before output scaling and does not change the note's pitch.
 
 ## Setup
