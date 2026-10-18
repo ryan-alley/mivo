@@ -68,6 +68,8 @@ What this means for MI-VO:
 
 The steps below describe the one layout tested so far: one MIDI track per instrument, controlling a Polaxis Talko 2. Other layouts are untested.
 
+Note that you can use everything here piecemeal - you can trigger just gate and pitch using one instrument, and then use the pots on the Talko for the other two, or any combination that you want.
+
 ### Hardware setup
 
 Use the Push 3's **Pedal/CV 1 and 2** jacks, not its main audio outputs. Looking directly at the rear panel, **Pedal 2 is to the left of Pedal 1**. Ableton's official rear-panel image highlights the pair:
@@ -186,6 +188,14 @@ In the example wiring, play notes on the **pitch and velocity track** to set Sou
 
 This mapping is for **voltage control and sound selection**, not calibrated musical pitch: Talko's Pitch input does **not** follow 1 V/octave.
 
+### A Note on Sequencing
+
+There are race conditions between the CV output voltages and the gating trigger - as such, it's sometimes better to "prep" the next CV by putting in a note during the previous execution to draw the voltage correctly ahead of the next gate.  See the example below.
+
+Also note that the speed settings on the Talko and BPM of the sequence often interact and can cut samples too short, etc... if not planned correctly!
+
+![Sample sequence saying "Nine Five Six Seven" with Sound Bank 0](docs/images/sample_sequence.png)
+
 ## Future
 
 Planned improvements include:
@@ -194,3 +204,4 @@ Planned improvements include:
 - **Instrument UI:** build a user interface for both instruments so they are easier to use in Ableton Live.
 - **General CV control:** generalize beyond the Talko 2 with more flexible signalling and settings.
 - **Add usage video and screenshots:** add some useful usage tips and examples.
+- **A way to fix race conditions?** it may be possible to delay the trigger until after CV values are sent?
