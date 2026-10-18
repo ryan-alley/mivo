@@ -36,6 +36,13 @@ Each device has a **Pitch Bend** dial that can be automated in Live. The dial is
 - Bend is added to the pitch CV before output scaling, so it moves the pitch whether or not a note is held.
 - Before any note is played, pitch CV is measured from 0 V (C3).
 
+## Velocity scale
+
+The pitch/velocity device has a **Velocity Scale** dial that can be automated in Live. It multiplies the held note velocity CV from 0% (0 V) to 100% (full velocity). The default is 1 (100%), so the output is unchanged until the dial is moved.
+
+- The dial applies to the held velocity, so moving it updates the output while a note is held.
+- It is applied before output scaling and does not change the note's pitch.
+
 ## Setup
 
 The steps below describe the one layout tested so far: one MIDI track per instrument, controlling a Polaxis Talko 2. Other layouts are untested.
@@ -74,7 +81,7 @@ Note: the pitch CV is designed to read 0 V at C3 and 3.3 V at C7. See the Future
 Planned improvements include:
 
 - **Pitch bend automation:** implemented in the [src/](src/) patches. It needs testing in Max and re-saving as `.amxd` before it is used.
-- **Velocity automation:** make velocity automatable in a similar way, so it affects the velocity CV.
+- **Velocity automation:** implemented in [src/talko_midi_pitch_and_velocity.maxpat](src/talko_midi_pitch_and_velocity.maxpat) as a scale dial. It needs testing in Max and re-saving as `.amxd` before use.
 - **Talko 2 voltages:** document the Talko 2's gate and CV voltage specifications.
 - **Push 3 outputs:** document the Push 3's CV output capabilities and the assumptions the instruments make.
 - **Note-to-voltage mapping:** document how MIDI notes map to voltage under each setting. The current mapping is C3 to C7, linear from 0 V to 3.3 V.
